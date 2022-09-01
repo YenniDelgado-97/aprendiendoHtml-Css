@@ -1,0 +1,66 @@
+/*
+<selector>{
+    <propiedad: <valor>;
+    <propiedad: <valor>;
+    <propiedad: <valor>;
+
+
+}
+*/
+
+body{
+    background-color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+/*Con el anterior selector todos los elementos de la etiqueta quedan e esa forma*/
+
+#introduccion {
+    color:blueviolet;
+}
+#intro{
+    text-decoration: line-through;
+}
+
+#lista a {
+    color:lightcoral ;
+    font-size: x-large;
+    font-style: inherit;
+}
+
+/*con este selector, se especifica con un id la etiqueta que quiero seleccionar*/
+
+.segundo-nivel{
+    font-size: medium;
+    color: yellow;
+}
+a:link {
+    text-decoration: none;
+}
+
+
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a.boton:link{
+    background-color: rgba(0, 0, 0, .8);
+    color: aquamarine;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: dashed;
+    display: inline-block;
+}
+a.boton:hover{
+    background-color: yellowgreen;
+}
