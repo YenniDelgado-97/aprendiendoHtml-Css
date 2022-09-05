@@ -8,21 +8,73 @@
 </head>
 <body>
     
-    <form>
-        <label>Nombre</label>
-        <input id="nombre" type="text" value="Yenni" placeholder="Nombre">
+    <form method="get">
+        <label for="username">Nombre</label>
+        <input id="username" type="text"  placeholder="Nombre">
         <label>Contraseña</label>
         <input type="password" placeholder="Contraseña">
         <label>Edad</label>
         <input type="number" placeholder="Edad">
+        <label>Correo Electronico</label>
         <input type="email">
+        <label>Color</label>
         <input type="color">
+        <label></label>
         <input type="range" min="0" max="10">
+        <label>Fecha de nacimiento</label>
         <input type="date">
+        <label>Hora de nacimiento</label>
         <input type="time">
+        <label>genero</label>
+        
+        <div>
+        
+        <label for ="male">Masculino</label>
+        <input id= "male" type="radio">   
+
+        <label for="female">Femenino</label>
+        <input id="female" type="radio">
+
+        <label>Indeterminado</label>
         <input type="radio">
+        </div>
+        <label>Hobbie</label>
+        <label>Baloncesto</label>
         <input type="checkbox">
+        <label>Volleyball</label>
+        <input type="checkbox">
+
+        <label for="logros">logros</label>
+        <textarea id="logros">Escriba aqui el contenido</textarea>
+
+        <label>Especialidad</label>
+        <select>
+            <option>Ingenieria de sistemas</option>
+            <option selected>Ingenieria Electrica</option>
+            <option>Ingenieria Mecánica</option>
+        </select>
+
+        <label>Carreras afines</label>
+        <input list="afines">
+        <datalist id="afines">
+            <option selected>Ingenieria de sistemas</option>
+            <option>Ingenieria Electrica</option>
+            <option>Ingenieria Mecánica</option>
+        </datalist>
+        
+        <input type="search">
+
+
+
+        <hr>
         <input type="button" value="Es un boton">
+        <input type="submit" value="es un boton">
+
+        <button type="button">Actión</button>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+        <input type="file">
+        <input type="hidden">
     </form>
 
 
