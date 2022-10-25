@@ -8,32 +8,32 @@
 </head>
 <body>
     
-    <form method="get">
+    <form method="post"  action="/api/resgistro" >
         <label for="username">Nombre</label>
-        <input id="username" type="text"  placeholder="Nombre">
+        <input id="username" type="text" name="username" placeholder="Nombre">
         <label>Contraseña</label>
-        <input type="password" placeholder="Contraseña">
+        <input type="password" name="pass" placeholder="Contraseña">
         <label>Edad</label>
-        <input type="number" placeholder="Edad">
+        <input type="number" name="age" placeholder="Edad">
         <label>Correo Electronico</label>
-        <input type="email">
+        <input type="email" name="email">
         <label>Color</label>
-        <input type="color">
+        <input type="color" name="color">
         <label></label>
-        <input type="range" min="0" max="10">
+        <input type="range" name="rango"min="0" max="10">
         <label>Fecha de nacimiento</label>
-        <input type="date">
+        <input type="date" name="date">
         <label>Hora de nacimiento</label>
-        <input type="time">
+        <input type="time" name="type">
         <label>genero</label>
         
         <div>
         
         <label for ="male">Masculino</label>
-        <input id= "male" type="radio">   
+        <input id= "male" name="genero" type="radio" checked>   
 
         <label for="female">Femenino</label>
-        <input id="female" type="radio">
+        <input id="female" name="genero" type="radio">
 
         <label>Indeterminado</label>
         <input type="radio">
@@ -70,14 +70,22 @@
         <input type="button" value="Es un boton">
         <input type="submit" value="es un boton">
 
-        <button type="button">Actión</button>
+        <button type="button" onclick="mostrarMensaje('click en botón accionar')">Actión</button>
         <button type="reset">Limpiar</button>
         <button type="submit">Enviar</button>
         <input type="file">
         <input type="hidden">
     </form>
 
+    <form>
+        <label for="contador">Contador</label>
+        <input id="contador" type="number" value="50">
+        <button type="button" onclick="incrementarContador()">Incrementar</button>
+        <p id="salida"></p>
+    </form>
 
+
+        <script src="js/contactanos.js"> </script>
 
 </body>
 </html>
